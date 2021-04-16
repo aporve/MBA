@@ -5,4 +5,4 @@ var observer = new MutationObserver(function(mutations) {
 var target = document.getElementById('ym-notification');
 observer.observe(target, { attributes : true, attributeFilter : ['style'] });
 
-document.getElementById("myDIV").style.backgroundSize = "39px";
+document.getElementById("from-icon").style.backgroundSize = "39px";
