@@ -1,5 +1,9 @@
 document.getElementById('ym-notification').style.bottom = '70px';
-document.getElementsByClassName("from-icon").style.backgroundSize = "39px";
+var elems = document.getElementsByClassName("from-icon");
+for (var i = 0; i < elems.length; i++) {
+    elems[i].style.backgroundSize = "39px";
+}
+
 var observer = new MutationObserver(function(mutations) {
 	document.getElementById('ym-notification').style.bottom = '70px';
 });
